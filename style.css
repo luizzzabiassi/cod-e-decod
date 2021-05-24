@@ -1,19 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap');
+
 body{
+    font-family: "Montserrat", sans-serif;
     background-color: lightsteelblue;
 }
 
 h1{
-    font-family: Arial, Helvetica, sans-serif;
     color: darkslateblue;
     text-align: center;
 }
 
 h4{
-    font-family: Arial, Helvetica, sans-serif;
     color: mediumslateblue;
     margin-bottom: 2%;
     font-size: 20px;
     text-align: center;
+    margin-top: 2px;
+}
+
+#resultado{
     margin-top: 2%;
 }
 
@@ -22,31 +27,43 @@ h4{
     margin-left: 35%;
     width: 30%;
     font-size: 120%;
-    border: outset;
+    border: 2px solid darkslateblue;
+    outline: none;
+}
+
+#mensagem{
+    margin-bottom: 2%;
 }
 
 select{
     width: 15%;
     font-size: 120%;
-    font-family: Arial, Helvetica, sans-serif;
     margin-left: 35%;
     margin-bottom: 2%;
     border-radius: 5px;
-    border: outset;
+    border: 1px solid;
+    outline: none;
+}
+
+option{
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
 }
 
 label{
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 16px;
 }
 
 button{
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
     margin-left: 42%;
     margin-top: 30px;
     font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
     background-color: white;
     border-radius: 5px;
-    border: outset;
+    border: 1px solid;
+    outline: none;
 }
+
