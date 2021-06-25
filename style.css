@@ -18,13 +18,18 @@ h4{
     margin-top: 2px;
 }
 
+.criptografia{
+    text-align: center;
+}
+
 #resultado{
     margin-top: 2%;
 }
 
 #mensagem, #incremento{
+    display: flex;
     border-radius: 5px;
-    margin-left: 35%;
+    margin: 0 auto;
     width: 30%;
     font-size: 120%;
     border: 2px solid darkslateblue;
@@ -38,7 +43,7 @@ h4{
 select{
     width: 15%;
     font-size: 120%;
-    margin-left: 35%;
+    margin: 0 auto;
     margin-bottom: 2%;
     border-radius: 5px;
     border: 1px solid;
@@ -60,10 +65,10 @@ button{
     font-family: "Montserrat", sans-serif;
     margin-left: 42%;
     margin-top: 30px;
-    font-size: 18px;
+    font-size: 20px;
     background-color: white;
     border-radius: 5px;
     border: 1px solid;
     outline: none;
+    cursor: pointer;
 }
-

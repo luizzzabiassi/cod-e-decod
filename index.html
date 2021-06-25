@@ -2,6 +2,8 @@
 <html lang="PT-BR">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Cod e Decod.</title>
 </head>
@@ -14,23 +16,26 @@
         <input id="mensagem">
 
         <h4>Selecione uma opção:</h4>
-        <select id="selecionar">
-            <option value="">Selecione:</option>
-            <option value="opcao1">Cifra de César</option>
-            <option value="opcao2">Base64</option>
-        </select>
 
-        <input type="radio" id="cod" name="opcoes" value="codificar" checked>
-        <label for="cod">Codificar</label>
-        <input type="radio" id="decod" name="opcoes" value="decodificar">
-        <label for="decod">Decodificar</label>
+        <div class="criptografia">
+            <select id="selecionar">
+                <option value="">Selecione:</option>
+                <option value="opcao1">Cifra de César</option>
+                <option value="opcao2">Base64</option>
+            </select>
+
+            <input type="radio" id="cod" name="opcoes" value="codificar" checked>
+            <label for="cod">Codificar</label>
+            <input type="radio" id="decod" name="opcoes" value="decodificar">
+            <label for="decod">Decodificar</label>
+        </div>
 
         <div style= "display: none;" id="container">
             <h4>Incremento:</h4>
             <input id="incremento">        
         </div>
 
-        <button type="submit">Codificar Mensagem.</button>
+        <button type="submit">Codificar Mensagem</button>
     </form>
 
     <h4 id="resultado"></h4>

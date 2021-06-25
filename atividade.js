@@ -1,6 +1,8 @@
 var selecionar = document.querySelector('select');
 
-selecionar.addEventListener('change', function (evento) {
+selecionar.addEventListener('change', function (evento){
+    evento.preventDefault();
+
     var container = document.getElementById('container');
 
     if (evento.target.value == 'opcao1'){
@@ -15,17 +17,20 @@ selecionar.addEventListener('change', function (evento) {
 var radios = document.querySelectorAll('input[name="opcoes"]');
 
 radios.forEach(radio => {
-radio.addEventListener('change', function (evento) {
+radio.addEventListener('change', function (evento){
+    evento.preventDefault();
+
     var botao = document.querySelector('button');
 
     if (evento.target.value == 'codificar'){
-        botao.innerHTML = 'Codificar Mensagem.';
+        botao.innerHTML = 'Codificar Mensagem';
     }
 
     else{
-        botao.innerHTML = 'Decodificar Mensagem.';
+        botao.innerHTML = 'Decodificar Mensagem';
     }
-})});
+})
+});
 
 var formulario = document.forms.formulario;
 
@@ -38,7 +43,7 @@ formulario.addEventListener('submit', function (evento) {
     var radios = formulario.opcoes.value;
     var resultado = '';
 
-    if (selecionar == 'opcao1'){
+    if(selecionar == 'opcao1'){
         resultado = opcao1(radios, mensagem, incremento);
     }
 
@@ -49,7 +54,7 @@ formulario.addEventListener('submit', function (evento) {
     var resultadoMensagem = document.getElementById('resultado');
     resultadoMensagem.innerHTML = `<h4>Resultado:</h4> ${resultado}`;
 
-    formulario.reset();
+    formulario.mensagem.focus();
 });
 
 function opcao2(opcoes, mensagem){
@@ -67,7 +72,7 @@ function opcao1(opcoes, mensagem, incremento){
 
     var resultado = '';
 
-    for (var i = 0; i < mensagem.length; i++) {
+    for(var i = 0; i < mensagem.length; i++) {
         var letra = mensagem[i];
         var codigo = letra.charCodeAt();
 
